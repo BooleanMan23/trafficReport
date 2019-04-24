@@ -27,5 +27,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(HomeActivity.this,MainActivity.class);
             startActivity(intent);
         }
+        if(v.getId() == R.id.seeTrafficButton){
+            Intent intent = new Intent(HomeActivity.this,SeeTrafficAcitivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.reportTrafficButton){
+            Intent intent = new Intent(HomeActivity.this,ReportAcitivityClass.class);
+            startActivity(intent);
+        }
+
     }
 }
