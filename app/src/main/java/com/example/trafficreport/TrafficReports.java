@@ -6,7 +6,15 @@ public class TrafficReports {
     private String deskripsi;
     private String idPembuat;
     private String idReport;
+    private String tanggalReport;
 
+    public String getTanggalReport() {
+        return tanggalReport;
+    }
+
+    public void setTanggalReport(String tanggalReport) {
+        this.tanggalReport = tanggalReport;
+    }
 
     public String getIdPembuat() {
         return idPembuat;
@@ -40,10 +48,11 @@ public class TrafficReports {
         this.deskripsi = deskripsi;
     }
 
-    public TrafficReports(String namaJalan, String deskripsi, String idPembuat, String idReport) {
+    public TrafficReports(String namaJalan, String deskripsi, String idPembuat, String idReport, String tanggalReport) {
         this.namaJalan = namaJalan;
         this.deskripsi = deskripsi;
         this.idPembuat = idPembuat;
         this.idReport = idReport;
+      this.tanggalReport = tanggalReport;
     }
 }

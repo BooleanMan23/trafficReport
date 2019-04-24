@@ -12,6 +12,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ReportAcitivityClass extends AppCompatActivity implements View.OnClickListener {
 
     private EditText namaJalanEditText;
@@ -58,11 +61,18 @@ public class ReportAcitivityClass extends AppCompatActivity implements View.OnCl
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
 
+        //TANGGAL
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        String tanggalReport = sdf.format(new Date());
+
+        Log.i("InformasiReportTraffic", tanggalReport);
+
+
         String idUser = mAuth.getUid().toString();
         String trafficId = myRef.push().getKey();
         Log.i("informasiReportTraffic", idUser);
         Log.i("informasiReportTraffic", trafficId);
-        TrafficReports newTrafficReport = new TrafficReports(namaJalan, deskripsiJalan, idUser, trafficId);
+        TrafficReports newTrafficReport = new TrafficReports(namaJalan, deskripsiJalan, idUser, trafficId, tanggalReport);
         myRef.child("Traffic Reports").child(trafficId).setValue(newTrafficReport);
 
 
