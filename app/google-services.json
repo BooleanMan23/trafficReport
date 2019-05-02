@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "139234355494",
+    "firebase_url": "https://trafficreport-72c33.firebaseio.com",
+    "project_id": "trafficreport-72c33",
+    "storage_bucket": "trafficreport-72c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139234355494:android:4f55af16e43d6341",
+        "android_client_info": {
+          "package_name": "com.example.trafficreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139234355494-ue4g79bovjkusfkshleq45a1ceubuj34.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trafficreport",
+            "certificate_hash": "6143499c212a3714ed3d76a08e497688a332ad10"
+          }
+        },
+        {
+          "client_id": "139234355494-imb82r1rdcal2stesc60i2e9enab7gjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByarcah3VENwnNvDLgcfwCBFYFjOP9oaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139234355494-imb82r1rdcal2stesc60i2e9enab7gjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
